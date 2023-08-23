@@ -8,9 +8,10 @@
 import Foundation
 
 struct SearchFilter: Codable {
+    var offset: Int
     var text: String
     
     var query: String {
-        "q=\(text)"
+        "q=\(text)&offset=\(offset)"
     }
 }

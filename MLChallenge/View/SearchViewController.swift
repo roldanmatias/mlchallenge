@@ -31,7 +31,6 @@ class SearchViewController: UIViewController {
         
         listViewController.list = list
         listViewController.viewModel = viewModel
-        listViewController.searchText = searchTextField.text
     }
 
     @IBAction func search(_ sender: Any) {
@@ -44,7 +43,7 @@ class SearchViewController: UIViewController {
         
         showSpinner()
         
-        let filter = SearchFilter(text: text)
+        let filter = SearchFilter(offset: 0, text: text)
         
         viewModel.seearch(
             filter: filter) { [weak self] searchResult in

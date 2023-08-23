@@ -44,5 +44,5 @@ DispatchQueue.global(qos: .background).async {
 No vi necesario utilizar un package para las llamadas a la API pero en caso de ser neesario podría agregarlo.
 
 ## Falta implementar
-Paginado
 Mejoras en UI
+Unit Tests en caso de network error

@@ -98,6 +98,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" id="lfh-Wa-RHt">
+                            <rect key="frame" x="0.0" y="178" width="393" height="20"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Mx0-2j-yFI"/>
+                                <constraint firstAttribute="height" constant="20" id="amS-Ja-9k8"/>
+                            </constraints>
+                        </activityIndicatorView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="pMa-go-xaB" customClass="ResultTableViewCell" customModule="MLChallenge" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="100"/>
@@ -157,6 +165,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="jL9-Zc-0Lx"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="lfh-Wa-RHt" id="C4B-1v-wgi"/>
                         <segue destination="ZQ0-QG-gee" kind="show" identifier="detailSegue" id="Beq-rm-hfk"/>
                     </connections>
                 </tableViewController>

@@ -9,5 +9,6 @@ import Foundation
 
 struct SearchResult: Codable {
     var paging: Paging
+    var query: String
     var results: [Item]?
 }

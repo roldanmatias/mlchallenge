@@ -60,7 +60,7 @@ final class Repository: RepositoryProtocol {
         
         session.dataTask(with: urlRequest) { data, response, error in
             guard let data = data else { 
-                onError(NSError()) 
+                onError(NSError(domain: "mlChallenge", code: 404)) 
                 return
             }
             

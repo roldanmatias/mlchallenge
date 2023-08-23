@@ -10,5 +10,5 @@ import Foundation
 struct Paging: Codable {
     var limit: Int
     var offset: Int
-    var total: Double
+    var total: Int
 } 
