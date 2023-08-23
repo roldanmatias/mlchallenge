@@ -1,7 +1,7 @@
 
 # ML Challenge
 
-Challenge creado para cuplir con la consiga del challenge de ML.
+Challenge creado para cuplir con la consigna del challenge de ML.
 
 ## Arquitectura
 Model View View Model
@@ -41,8 +41,9 @@ DispatchQueue.global(qos: .background).async {
 ```
 
 ## Nota
-No vi necesario utilizar un package para las llamadas a la API pero en caso de ser neesario podría agregarlo.
+No vi necesario utilizar un package para las llamadas a la API pero en caso de ser necesario podría agregarlo.
 
 ## Falta implementar
 Mejoras en UI
+
 Unit Tests en caso de network error
